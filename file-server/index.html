@@ -123,7 +123,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://fireflies3072.github.io/tags/programming/"/>
+    <link rel="canonical" href="https://fireflies3072.github.io/file-server/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -132,14 +132,18 @@
     
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Fireflies">
-<meta property="og:url" content="https://fireflies3072.github.io/tags/programming/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Set Up a Simple File Server on Linux with Nginx">
+<meta property="og:url" content="https://fireflies3072.github.io/file-server/index.html">
 <meta property="og:site_name" content="Fireflies">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://fireflies3072.github.io/images/redefine-og.webp">
+<meta property="article:published_time" content="2025-05-24T19:31:09.000Z">
+<meta property="article:modified_time" content="2025-10-26T20:15:41.180Z">
 <meta property="article:author" content="Fireflies">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="server">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://fireflies3072.github.io/images/redefine-og.webp">
     
@@ -153,7 +157,7 @@
     
     <title>
         
-            Tag: programming | Fireflies Blog
+            Set Up a Simple File Server on Linux with Nginx | Fireflies Blog
         
     </title>
 
@@ -289,7 +293,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active"
+                                <a class=""
                                    href="/tags"
                                         >
                                     <i class="fa-regular fa-tags fa-fw"></i>
@@ -413,7 +417,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/tags"
                         >
                             <span>
@@ -514,58 +518,275 @@
 			
 
 			<div class="main-content">
-				<div class="page-template-container">
-	
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
 
-	
-	<div class="tag-name">
-    <i class="fa-solid fa-tag"></i>&nbsp;programming
-</div>
-<div class="tag-post-list">
+		<div class="article-title relative w-full">
+			
+			
+			
+			<img src="http://137.220.62.56:10000/images/2025-05-file-server/cover.jpg" alt="Set Up a Simple File Server on Linux with Nginx" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			
+			<div class="w-full flex items-center absolute bottom-0 justify-start">
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">Set Up a Simple File Server on Linux with Nginx</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/redefine-avatar.svg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">Fireflies</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2025-05-24 14:31:09</span>
+        <span class="mobile">2025-05-24 14:31:09</span>
+        <span class="hover-info">Created</span>
+    </span>
     
-<div class="archive-list-container">
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2025-10-26 15:15:41</span>
+            <span class="mobile">2025-10-26 15:15:41</span>
+            <span class="hover-info">Updated</span>
+        </span>
     
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2024</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">1</span>
-            </div>
-            
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
                 
                     
+                        
+                        <li>
+                            <a href="/categories/Articles/">Articles</a>&nbsp;
+                        </li>
                     
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='10-24'>
-                    
-                    <a href="/program-magic/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">程序员的魔法世界：从《简单易懂的现代魔法》到现实中的代码魔法</span>
-                    </a>
                     
                 
-                </li> <!-- Ensure the last item is properly closed -->
             </ul>
-        </section>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/linux/">linux</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/server/">server</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h2 id="Setup-and-Configuration"><a href="#Setup-and-Configuration" class="headerlink" title="Setup and Configuration"></a>Setup and Configuration</h2><h3 id="Install-Nginx"><a href="#Install-Nginx" class="headerlink" title="Install Nginx"></a>Install Nginx</h3><p>Ensure the Nginx web server package is installed on your Linux distribution.</p>
+<p><strong>Debian&#x2F;Ubuntu-based systems</strong></p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install nginx</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>RHEL&#x2F;CentOS&#x2F;Fedora-based systems</strong></p>
+<p>Early systems</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> yum install nginx</span><br></pre></td></tr></table></figure></div>
+
+<p>Latest systems</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> dnf install nginx</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h3 id="Create-the-Shared-Directory"><a href="#Create-the-Shared-Directory" class="headerlink" title="Create the Shared Directory"></a>Create the Shared Directory</h3><p>Define the directory you intend to share via Nginx. Using a path outside of the default web root (<code>/var/www/html</code>) is often cleaner.</p>
+<p>This is an example to create a folder at <code>/srv/file_share</code>.</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p /srv/file_share</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h3 id="Configure-Nginx"><a href="#Configure-Nginx" class="headerlink" title="Configure Nginx"></a>Configure Nginx</h3><p>We will create a specific configuration file in the <code>/etc/nginx/conf.d/</code> directory. This is often the simplest method, as modern Nginx installations are pre-configured to automatically include files from this location.</p>
+<p>Create the file and name it appropriately (e.g., <code>file_server.conf</code>):</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/nginx/conf.d/file_server.conf</span><br></pre></td></tr></table></figure></div>
+
+<p>Paste the following <code>server</code> block configuration. We will use port <code>10000</code> to avoid conflicts. <strong>Remember to replace <code>your_server_ip_or_domain</code> with your own setting.</strong></p>
+<div class="code-container" data-rel="Nginx"><figure class="iseeu highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">    <span class="attribute">listen</span> <span class="number">10000</span>; <span class="comment"># Listen on the custom port</span></span><br><span class="line">    <span class="attribute">server_name</span> your_server_ip_or_domain;</span><br><span class="line"></span><br><span class="line">    <span class="section">location</span> / &#123;</span><br><span class="line">        <span class="comment"># Set the root directory for the files</span></span><br><span class="line">        <span class="attribute">root</span> /srv/file_server; </span><br><span class="line"></span><br><span class="line">        <span class="comment"># 1. ESSENTIAL: Enables directory browsing (file listings)</span></span><br><span class="line">        <span class="attribute">autoindex</span> <span class="literal">on</span>; </span><br><span class="line"></span><br><span class="line">        <span class="comment"># 2. Optional: Show sizes in KB, MB, GB format</span></span><br><span class="line">        <span class="attribute">autoindex_exact_size</span> <span class="literal">off</span>; </span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 3. Optional: Sort listing by modification time</span></span><br><span class="line">        <span class="attribute">autoindex_localtime</span> <span class="literal">on</span>; </span><br><span class="line"></span><br><span class="line">        <span class="comment"># 4. Optional: If no index.html is found, autoindex will take over</span></span><br><span class="line">        <span class="attribute">index</span> index.html index.htm; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h3 id="Test-and-Restart"><a href="#Test-and-Restart" class="headerlink" title="Test and Restart"></a>Test and Restart</h3><p><strong>Test the configuration syntax</strong></p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nginx -t</span><br></pre></td></tr></table></figure></div>
+
+<p>Ensure the output confirms: <code>syntax is ok</code> and <code>test is successful</code>.</p>
+<p><strong>Restart the Nginx service</strong></p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl restart nginx</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h2 id="Troubleshooting"><a href="#Troubleshooting" class="headerlink" title="Troubleshooting"></a>Troubleshooting</h2><p>If you cannot access your file server at <code>http://your_server_ip:10000/</code>, it is almost certainly due to one of the following reasons.</p>
+<h3 id="Firewall-Configuration"><a href="#Firewall-Configuration" class="headerlink" title="Firewall Configuration"></a>Firewall Configuration</h3><p>If the web server is running but the page times out or refuses connection, your firewall is likely blocking port <code>10000</code>.</p>
+<p><strong>Option A: Open the Specific Port (Recommended)</strong></p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 10000/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw status</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>Option B: Disable the Firewall (For Testing Only)</strong></p>
+<p>To quickly confirm that the firewall is the issue, you can temporarily disable UFW. Do not leave the firewall disabled on production servers.</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw <span class="built_in">disable</span></span><br><span class="line"><span class="built_in">sudo</span> ufw status</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h3 id="Nginx-Main-Configuration-Check"><a href="#Nginx-Main-Configuration-Check" class="headerlink" title="Nginx Main Configuration Check"></a>Nginx Main Configuration Check</h3><p>While placing files in <code>conf.d/</code> is generally correct, it only works if the main Nginx configuration file is set to include them.</p>
+<ol>
+<li><p><strong>Check the main config file</strong></p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/nginx/nginx.conf</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>Verify the include directive</strong></p>
+<p>Inside the main <code>http { ... }</code> block, ensure one of the following lines exists:</p>
+<div class="code-container" data-rel="Nginx"><figure class="iseeu highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">http&#123;</span><br><span class="line">	<span class="comment"># ...other settings...</span></span><br><span class="line"></span><br><span class="line">    <span class="attribute">include</span> /etc/nginx/conf.d/<span class="regexp">*.conf</span>;</span><br><span class="line">    <span class="attribute">include</span> /etc/nginx/sites-enabled/*;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="Linux-File-Permissions-Fix-The-403-Solution"><a href="#Linux-File-Permissions-Fix-The-403-Solution" class="headerlink" title="Linux File Permissions Fix (The 403 Solution)"></a>Linux File Permissions Fix (The 403 Solution)</h3><p>If the Nginx configuration is correct, a <strong>403 Forbidden</strong> is almost always a Linux file permission issue.</p>
+<ol>
+<li><p><strong>Check the Nginx Error Log (The Crucial First Step) 🔍</strong> This log will definitively tell you <strong>why</strong> Nginx is blocking the request. Look for <code>Permission denied</code> (a file system issue) or <code>directory index is forbidden</code> (a missing <code>autoindex on;</code> directive).</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">tail</span> /var/log/nginx/error.log</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>Identify the Nginx User:</strong> Confirm the user Nginx is running as.</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep <span class="string">&quot;user&quot;</span> /etc/nginx/nginx.conf</span><br></pre></td></tr></table></figure></div>
+
+<p>If it returns <code>user www-data;</code> or <code>user nginx;</code>, it means Nginx doesn’t have enough permission to access the <code>file_share</code> folder.</p>
+</li>
+<li><p><strong>Fix Ownership and Permissions:</strong> If the log showed <code>(13: Permission denied)</code>, Nginx cannot read your files. Replace <code>/srv/file_share</code> with your actual path, and replace <code>www-data</code> with your Nginx user if necessary.</p>
+<p><strong>Option 1:</strong> Change ownership to the Nginx user</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">chown</span> -R www-data:www-data /srv/fileserver/</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>Option 2:</strong> Set Directory Permissions (755): Read&#x2F;Execute for all</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> find /srv/file_share/ -<span class="built_in">type</span> d -<span class="built_in">exec</span> <span class="built_in">chmod</span> 755 &#123;&#125; \;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>Option 3:</strong> Set File Permissions (644): Read-only for Nginx</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> find /srv/file_share/ -<span class="built_in">type</span> f -<span class="built_in">exec</span> <span class="built_in">chmod</span> 644 &#123;&#125; \;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>Fix Home Directory Path Permissions (If Applicable):</strong> If your files are in a home folder (e.g., <code>/home/ubuntu/file_share</code>), you must allow the Nginx user to traverse the parent directory. Replace <code>ubuntu</code> with your username.</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> o+x /home/ubuntu/</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="Complete-All-Steps-and-Restart"><a href="#Complete-All-Steps-and-Restart" class="headerlink" title="Complete All Steps and Restart"></a>Complete All Steps and Restart</h3><p>After making any changes to permissions, configurations, or the firewall, always test the configuration and restart the service one final time.</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nginx -t</span><br><span class="line"><span class="built_in">sudo</span> systemctl restart nginx</span><br></pre></td></tr></table></figure></div>
+
+<p>Your file server should now be fully accessible!</p>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> Set Up a Simple File Server on Linux with Nginx</li>
+        <li><strong>Author:</strong> Fireflies</li>
+        <li><strong>Created at
+                :</strong> 2025-05-24 14:31:09</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2025-10-26 15:15:41
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://fireflies3072.github.io/file-server/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
 </div>
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/linux/">#linux</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/server/">#server</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/program-magic/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item truncate max-w-48">程序员的魔法世界：从《简单易懂的现代魔法》到现实中的代码魔法</span>
+						<span class="post-nav-item">Next posts</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+	</div>
+
 	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">Set Up a Simple File Server on Linux with Nginx</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Setup-and-Configuration"><span class="nav-text">Setup and Configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Nginx"><span class="nav-text">Install Nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-the-Shared-Directory"><span class="nav-text">Create the Shared Directory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Configure-Nginx"><span class="nav-text">Configure Nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Test-and-Restart"><span class="nav-text">Test and Restart</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Troubleshooting"><span class="nav-text">Troubleshooting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Firewall-Configuration"><span class="nav-text">Firewall Configuration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nginx-Main-Configuration-Check"><span class="nav-text">Nginx Main Configuration Check</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-File-Permissions-Fix-The-403-Solution"><span class="nav-text">Linux File Permissions Fix (The 403 Solution)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Complete-All-Steps-and-Restart"><span class="nav-text">Complete All Steps and Restart</span></a></li></ol></li></ol>
 
-	<div class="page-template-content markdown-body">
-		
-
-		
-	</div>
-
-	<div class="page-template-comments">
-		
 	</div>
 </div>
-
-<div class="paginator">
-	<span class="page-number current">1</span>
+	</div>
+	
 </div>
-  
 			</div>
 
 			
@@ -643,6 +864,22 @@
 		</div>
 	</div>
 
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+	</ul>
+</div>
+	</div>
 	
 
 	<div class="right-side-tools-container">
@@ -725,6 +962,7 @@
         containers: ["#swup"],
     });
 </script>
+
 
 
 
