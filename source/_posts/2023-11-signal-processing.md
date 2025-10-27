@@ -3,7 +3,7 @@ title: Signal processing formula sheet
 date: 2023-11-07 15:43:17
 tags: [signal]
 categories: [Articles]
-cover: http://137.220.62.56:10000/images/2023-11-signal-processing/cover.webp
+cover: https://fireflies3072.blob.core.windows.net/blog/images/2023-11-signal-processing/cover.webp
 mathjax: true
 excerpt: This is a concise Signal Formula Sheet containing essential formulas for Signals and Systems, covering system properties (Linear, Causal, Stable), convolution, Fourier Transforms (FT, FS, DTFT) pairs and properties, the Hilbert Transform, and Amplitude Modulation (AM) techniques.
 ---

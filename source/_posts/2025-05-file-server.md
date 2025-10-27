@@ -3,7 +3,7 @@ title: Set Up a Simple File Server on Linux with Nginx
 date: 2025-05-24 14:31:09
 tags: [linux, server]
 categories: [Articles]
-cover: http://137.220.62.56:10000/images/2025-05-file-server/cover.jpg
+cover: https://fireflies3072.blob.core.windows.net/blog/images/2025-05-file-server/cover.jpg
 excerpt: When you need a quick, high-performance, read-only file server on a Linux machine, Nginx is often the best solution. It's stable, fast, and remarkably simple to configure for serving static content and directory listings.
 ---
 
