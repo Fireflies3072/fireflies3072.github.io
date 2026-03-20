@@ -13,7 +13,7 @@ info:
   # Site title
   title: Fireflies Blog
   # Site subtitle
-  subtitle: 
+  subtitle: Why Can Birds Fly?
   # Author name
   author: Fireflies
   # Site URL
@@ -131,8 +131,10 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image: 
-    light: /images/wallhaven-wqery6-light.webp # light mode
-    dark: /images/wallhaven-wqery6-dark.webp # dark mode
+    # light: /images/wallhaven-wqery6-light.webp # light mode
+    # dark: /images/wallhaven-wqery6-dark.webp # dark mode
+    light: /images/home_light.png
+    dark: /images/home_dark.jpg
   # Home banner title
   title: Dream big, start small
   # Home banner subtitle

@@ -116,22 +116,53 @@ The **Inverted Pendulum** is a canonical problem in control theory. It involves 
 
 **PID**
 
-Although a standard PID can be respond to position and angle at the same time with a weight, its performance is very poor. A cascaded PID is a applied here. The first PID takes position input and gives a target angle output. The second PID takes the actual angle and target angle and gives force output.
+Although a standard PID can respond to position and angle at the same time with a weight, its performance is very poor. A cascaded PID is a applied here. The first PID takes position input and gives a target angle output. The second PID takes the actual angle and target angle and gives force output.
 
 <video width="480" height="480" controls>   <source src="https://fireflies3072.blob.core.windows.net/blog/images/2025-09-control-library/ip_pid.mp4" type="video/mp4">   Not support video </video>
 
 **DeePC with data from PID controller**
 
+Collecting data using the cascaded PID controller described earlier allows DeePC to replicate its stable balancing behavior, as illustrated in the following video.
+
 <video width="480" height="480" controls>   <source src="https://fireflies3072.blob.core.windows.net/blog/images/2025-09-control-library/ip_deepc_pid.mp4" type="video/mp4">   Not support video </video>
+
+However, this initial implementation isn't entirely stable. The PID controller tends to produce control actions very close to zero, resulting in a Hankel matrix with a low rank of around 17. For DeePC to be effective, this matrix requires a full rank, which for our setup ($T_{\text{ini}}=3$, $T_f=5$, $u_{\text{size}}=1$, $y_{\text{size}}=4$) is calculated as $(T_{\text{ini}} + T_f) \times (u_{\text{size}} + y_{\text{size}}) = 40$.
+
+In DeePC, the rank of the Hankel matrix reflects the diversity and richness of the collected data. A full rank indicates that the data spans the system's entire behavioral subspace, allowing the controller to accurately predict a wide range of future behaviors. Conversely, a rank-deficient matrix signals a lack of variety, constraining the controller and leading to suboptimal or unstable performance.
+
+To resolve the rank deficiency, we introduced a small amount of Gaussian noise to the PID outputs during data collection. This successfully excited the system, increasing the rank to the required 40. With the data quality issue addressed, we tuned the regularization parameter $\lambda_g$ by searching over a logarithmic space, which yielded an optimal value of approximately 2814 based on the average number of steps per episode.
+
+It is important to note that these results are highly sensitive to randomness in the data collection process. By default, we gather enough trajectories to form a Hankel matrix with $(T_{\text{ini}} + T_f) \times (u_{\text{size}} + y_{\text{size}} + 2) = 56$ columns. Increasing the volume of data helps mitigate this randomness, leading to more consistent and improved performance. For instance, after we increase the columns of the Hankel matrix to 200, the controller becomes much more stable, as demonstrated in the following video.
+
+<video width="480" height="480" controls>   <source src="https://fireflies3072.blob.core.windows.net/blog/images/2025-09-control-library/ip_deepc_pid2.mp4" type="video/mp4">   Not support video </video>
+
+![](https://fireflies3072.blob.core.windows.net/blog/images/2025-09-control-library/ip_deepc_pid2.png)
 
 
 
 ## Future Updates
 
-The PyController library is committed to continuous growth. Our immediate focus is on expanding the stability and examples for existing environments. Specifically, we plan to address the current difficulties with the **Inverted Pendulum** examples, tuning parameters, and exploring new control variants to ensure robust and illustrative performance. Additionally, we aim to integrate more complex and challenging Gymnasium environments in the near future.
+The journey for PyController is just getting started, and we're excited about the road ahead. Our main focus is on expanding and refining the library to make it an even more powerful tool for the control systems community.
 
+One of our top priorities is to enhance our existing environments. We'll be revisiting the **Lunar Lander** simulation, tuning its parameters and exploring new control strategies to create more robust and illustrative examples. We're also looking to broaden our horizons by integrating environments from different domains. The **ICU Sepsis** and **Gym Any Trading** environments, for example, present an exciting challenge. We plan to adapt and improve it to make it a better fit for classic control strategies, showcasing the versatility of PyController.
 
+Stay tuned for more updates, and as always, we welcome contributions from the community!
 
 ## Acknowledgement
 
-The PyController project benefits greatly from prior foundational work. The **Rocket Lander** environment, a Box2D Gymnasium simulation of a Falcon 9 ocean barge landing, was originally created by Reuben Ferrante and later modified by Dylan Vogel and Gerasimos Maltezos for the 2023 Computation Control course at ETH Zurich. Their work provides a rich and realistic simulation for testing advanced control systems.
+We extend our sincere thanks to the following individuals and projects:
+
+* **Project Supervision and Guidance**
+    * We are deeply grateful to our advisor, **Professor Jeremy Coulson** (Assistant Professor, University of Wisconsin–Madison), for his guidance, expertise in data-driven control, and foundational support for this project.
+
+    * **Personal Website:** https://jeremycoulson.github.io/
+
+* **Rocket Lander Environment**
+    * **Modified by** Dylan Vogel and Gerasimos Maltezos for the 2023 Computation Control course at ETH Zurich.
+    * **Original environment** created by Reuben Ferrante: [https://github.com/arex18/rocket-lander](https://github.com/arex18/rocket-lander).
+* **ICU-Sepsis Environment**
+    * This benchmark MDP for sepsis treatment simulation was introduced in the paper [**ICU-Sepsis: A Benchmark MDP Built from Real Medical Data**](https://arxiv.org/abs/2406.05646) by **Choudhary et al. (2024)**. It is built using the **MIMIC-III dataset**.
+    * **Github link:** [icu-sepsis/icu-sepsis: ICU-Sepsis is a lightweight, yet challenging RL environment that models the treatment of sepsis in the ICU.](https://github.com/icu-sepsis/icu-sepsis)
+* **gym-anytrading**
+    * We utilize the Gym environment framework for reinforcement learning-based trading, as provided by the **gym-anytrading** project.
+    * **Github link:** [AminHP/gym-anytrading: The most simple, flexible, and comprehensive OpenAI Gym trading environment (Approved by OpenAI Gym)](https://github.com/AminHP/gym-anytrading)

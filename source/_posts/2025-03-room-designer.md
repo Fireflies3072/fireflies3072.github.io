@@ -12,7 +12,8 @@ excerpt: The paper introduces a locally deployable tool that uses fine-tuned lan
 
 Imagine designing a complex environment for cutting-edge wireless research just by describing it in a chat. That's the core idea behind a new **LLM-supported 3D modeling tool** developed to simplify the creation of 3D environments for **Radio Radiance Field (RRF)** reconstruction. This tool dramatically lowers the barrier to entry for researchers, making it much easier to build the precise 3D scenes needed for next-generation channel modeling.
 
-[This paper](https://fireflies3072.blob.core.windows.net/blog/files/2025-03-room-designer/3D_modeling_ICC_2026.pdf) is submitted to ICC 2026, but still **waiting for result**.
+💡 **Status:** Submitted to ICC 2026 (Under Review).
+📥 **Download:** [Click here to view the Full Paper (PDF)](https://fireflies3072.blob.core.windows.net/blog/files/2025-03-room-designer/3D_modeling_ICC_2026.pdf)
 
 ### The Challenge: RRF and 3D Modeling
 
