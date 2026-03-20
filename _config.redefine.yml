@@ -133,8 +133,8 @@ home_banner:
   image: 
     # light: /images/wallhaven-wqery6-light.webp # light mode
     # dark: /images/wallhaven-wqery6-dark.webp # dark mode
-    light: /images/home_light.png
-    dark: /images/home_dark.jpg
+    light: https://fireflies3072.blob.core.windows.net/blog/images/background/home_light.jpg
+    dark: https://fireflies3072.blob.core.windows.net/blog/images/background/home_dark.jpg
   # Home banner title
   title: Dream big, start small
   # Home banner subtitle

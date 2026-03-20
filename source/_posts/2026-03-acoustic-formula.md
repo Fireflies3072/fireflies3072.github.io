@@ -3,6 +3,7 @@ title: Electro-Acoustical Engineering - Formula Sheet
 date: 2026-03-19 20:32:45
 tags: [signal]
 categories: [Articles]
+cover: https://fireflies3072.blob.core.windows.net/blog/images/2026-03-acoustic-formula/cover.jpg
 mathjax: true
 excerpt: A comprehensive formula sheet for electro-acoustical engineering, covering fundamental wave parameters, wave equations, acoustic impedance, power, intensity, and spatial modulation.
 ---
@@ -17,8 +18,6 @@ excerpt: A comprehensive formula sheet for electro-acoustical engineering, cover
 | **Angular Freq.** | $\omega$ | $\omega = 2\pi f = \frac{2\pi}{T} = ck$ | rad/s |
 | **Frequency** | $f$ | $f = \frac{\omega}{2\pi} = \frac{1}{T} = \frac{c}{\lambda} = \frac{ck}{2\pi}$ | Hz |
 | **Period** | $T$ | $T = \frac{1}{f} = \frac{2\pi}{\omega} = \frac{\lambda}{c} = \frac{2\pi}{ck}$ | s |
-
----
 
 ## Wave Equations & Solutions
 
@@ -41,8 +40,6 @@ excerpt: A comprehensive formula sheet for electro-acoustical engineering, cover
   - **Open-Open / Closed-Closed:** $f_n = \frac{nc}{2l}$
   - **Open-Closed:** $f_n = \frac{(2n-1)c}{4l}$
 
----
-
 ## Acoustic Impedance & Lumped Elements
 
 - **Acoustic Impedance:** $Z = \frac{p}{U}$
@@ -55,8 +52,6 @@ excerpt: A comprehensive formula sheet for electro-acoustical engineering, cover
 ### Helmholtz Resonator ($A_B / A_F \gg 1$)
 - **Front/Back Resonance:** $F_n = \frac{nc}{2L_F}$, $B_n = \frac{nc}{2L_B}$
 - **Helmholtz Resonance:** $F_H = \frac{c}{2\pi} \sqrt{\frac{A_F / A_B}{L_F L_B}}$
-
----
 
 ## Power, Intensity & Decibels
 
@@ -78,8 +73,6 @@ excerpt: A comprehensive formula sheet for electro-acoustical engineering, cover
   - **Reference distance:** $r_{ref} = 1 \text{ m}$
   - **Reference pressure (Air):** $p_{ref} = 20 \mu\text{Pa} = 2 \times 10^{-5} \text{ Pa}$
   - **Reference pressure (Water):** $p_{ref} = 1 \mu\text{Pa} = 10^{-6} \text{ Pa}$
-
----
 
 ## 2D/3D Waves & Spatial Modulation
 
